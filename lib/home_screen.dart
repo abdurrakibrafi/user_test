@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: ListView.builder(
-          itemCount: 5,
+          itemCount: items.length,
           itemBuilder: (BuildContext context, int index) {
             return ListTile(
                 leading: const Icon(
