@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);
 
-  List<String> items = ['Shirt', 'T-shirt', 'Suiter', 'Sarree', 'Formal Drees'];
+  List<String> items = ['Shirt', 'T-shirt', 'Suiter', 'Saree', 'Formal Drees'];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
