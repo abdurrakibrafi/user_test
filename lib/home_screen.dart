@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key}) : super(key: key);
 
-  List<String> items = ['Shirt', 'T-shirt', 'Suiter', 'Saree', 'Formal Drees'];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,22 +23,6 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
-      body: ListView.builder(
-          itemCount: items.length,
-          itemBuilder: (BuildContext context, int index) {
-            return ListTile(
-                leading: const Icon(
-                  Icons.card_travel,
-                  size: 35,
-                ),
-                title: Padding(
-                  padding: const EdgeInsets.all(10),
-                  child: Text(
-                    items[index],
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
-                  ),
-                ));
-          }),
     );
   }
 }
