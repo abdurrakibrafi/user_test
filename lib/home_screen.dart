@@ -61,7 +61,11 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(4.0),
-                    child: Text('City: ${data.city}'),
+                    child: Text(
+                      'City: ${data.city}',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(4.0),
